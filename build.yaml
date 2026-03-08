@@ -24,6 +24,6 @@ include:
 #   snippet: zmk-usb-logging
  - board: seeeduino_xiao_ble
    shield: cool642tb-mini_L
- - board: seeeduino_xiao_ble
+ - board: seeeduino_xiao_ble_zmk
    shield: settings_reset
   
