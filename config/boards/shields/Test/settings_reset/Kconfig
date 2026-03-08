@@ -1,2 +1,3 @@
 config ZMK_KEYBOARD_SETTINGS_RESET
     bool "Settings Reset Shield"
+
