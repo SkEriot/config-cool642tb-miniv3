@@ -14,19 +14,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        shift_tab {
-            bindings = <&kp LANG2>;
-            key-positions = <12 13>;
-        };
-
-        lang {
-            bindings = <&kp LANG1>;
-            key-positions = <18 19>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
@@ -34,6 +22,15 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        encoder_msc_Left_Right: encoder_msc_Left_Right {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_LEFT_RIGHT";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
         };
@@ -60,6 +57,8 @@
 &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(N8)  &trans         &trans    &kp BACKSLASH      &kp F11  &kp F2  &kp F3  &kp SQT
 &trans                &trans            &trans            &trans            &trans      &trans         &trans    &trans                                      &kp F12
             >;
+
+            sensor-bindings = <&encoder_msc_Left_Right>;
         };
 
         NUM {
@@ -84,10 +83,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB1  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB2  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                          &trans
             >;
         };
 
