@@ -4,7 +4,9 @@ manifest:
       url-base: https://github.com/zmkfirmware  
     - name: na-ka-no
       url-base: https://github.com/na-ka-no
-  
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+
   projects:  
     - name: zmk
       remote: na-ka-no  # フォークしたリポジトリを参照  
@@ -13,6 +15,11 @@ manifest:
     - name: zmk-pmw3610-driver  
       remote: na-ka-no
       revision: main  
-  
+      - name: zmk-rgbled-widget　 # RGB発光オプション追加
+      remote: caksoylar
+      revision: v0.3
+
+
+
   self:  
     path: config
