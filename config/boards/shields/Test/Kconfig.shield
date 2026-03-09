@@ -1,3 +1,8 @@
+config SHIELD_COOL642TB_MINI
+    bool "cool642tb-mini ZMK Shield"
+    select ZMK_BOARD_COMPAT
+    default $(shields_list_contains,cool642tb-mini)
+
 config SHIELD_ROBA_R
     def_bool $(shields_list_contains,cool642tb-mini_R)
 

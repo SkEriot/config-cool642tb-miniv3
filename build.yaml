@@ -26,3 +26,4 @@ include:
    shield: cool642tb-mini_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
+  
