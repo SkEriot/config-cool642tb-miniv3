@@ -66,7 +66,7 @@
 &kp MINUS   &kp N7                      &kp N8        &kp N9        &kp LS(EQUAL)                                  &kp INTERNATIONAL_3      &kp SEMICOLON   &mkp MB3        &kp SQT          &kp HOME
 &kp PERIOD  &kp NUMBER_4                &kp N5        &kp NUMBER_6  &kp N0         &kp LS(LT)          &kp LS(GT)  &kp LS(INTERNATIONAL_1)  &mkp MB1        &kp UP_ARROW    &mkp MB2         &lt 5 END
 &kp COMMA   &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp SLASH      &trans              &trans      &kp LEFT_BRACKET         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
-&bt BT_CLR  &mt LEFT_WIN LA(SEMICOLON)  &kp LS(SQT)   &trans        &trans         &kp LANGUAGE_1      &trans      &trans                                                                    &trans
+&trans      &mt LEFT_WIN LA(SEMICOLON)  &kp LS(SQT)   &trans        &trans         &kp LANGUAGE_1      &trans      &trans                                                                    &trans
             >;
         };
 
