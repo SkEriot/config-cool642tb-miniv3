@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware  
     - name: na-ka-no
       url-base: https://github.com/na-ka-no
+    - name: caksoylar  # <-- RGB LED
+      url-base: https://github.com/caksoylar
   
   projects:  
     - name: zmk
@@ -13,6 +15,9 @@ manifest:
     - name: zmk-pmw3610-driver  
       remote: na-ka-no
       revision: main  
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
   
   self:  
     path: config
